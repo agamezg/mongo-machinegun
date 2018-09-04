@@ -49,7 +49,7 @@ class MachineGun {
                     entityRepository.insertOne(collection, document)
                     if(j == batch/10 as int){
                         logger.info("==> Se han insertado satisfactoriamente "
-                                + j + " correspondientes al mes " + i + " del año " + year)
+                                + j + " documentos correspondientes al mes " + i + " del año " + year)
                     }
                 }
             }

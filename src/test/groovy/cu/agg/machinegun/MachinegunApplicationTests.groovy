@@ -27,7 +27,7 @@ class MachinegunApplicationTests {
 
 		assertTrue(collection.equalsIgnoreCase("MensajesCleaner"))
 		assertTrue(dateField.equalsIgnoreCase("fechaIngreso"))
-		assertTrue(batch == 2000000)
+		assertTrue(batch == 100)
 
 	}
 
