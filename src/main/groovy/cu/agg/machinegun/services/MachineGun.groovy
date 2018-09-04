@@ -39,17 +39,24 @@ class MachineGun {
         int batch = getBatch()
         DateTime date
         int intYear
+        int bulk
+        int percent
         for (String year : years) {
             intYear = year as int
             for (int i = 1; i<= 12; i++) {
                 date = new DateTime().withYear(intYear).withMonthOfYear(i)
+                bulk = 0
+                percent = 10
                 for(int j = 0; j <= batch; j++) {
                     document = Document.parse(documentString)
                     document.put(getDateField(), date.toDate())
                     entityRepository.insertOne(collection, document)
-                    if(j == batch/10 as int){
-                        logger.info("==> Se han insertado satisfactoriamente "
-                                + j + " documentos correspondientes al mes " + i + " del año " + year)
+                    bulk++
+                    if(bulk == batch/10 as int){
+                        logger.info("==> " + percent + "% del insertados satisfactoriamente del mes "
+                                + i + " del año " + year)
+                        percent+=10
+                        bulk = 0
                     }
                 }
             }

@@ -15,7 +15,6 @@ import org.springframework.data.mongodb.core.MongoTemplate
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory
 
 @Configuration
-@PropertySource("classpath:mongo.properties")
 class MongoConfig {
     private final Environment environment
 
