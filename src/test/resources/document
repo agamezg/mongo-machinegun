@@ -1,0 +1,28 @@
+{
+  "canal" : "movistar",
+  "cola" : "movistar-cmp",
+  "origen" : "2020",
+  "destino" : "112345678917",
+  "mensaje" : "test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1 test_1",
+  "consultaEstado" : "0",
+  "esmeId" : "0",
+  "messageParts" : [
+    {
+      "np" : 1,
+      "length" : 125,
+      "smppMsgId" : "699c5cf3",
+      "estado" : 102,
+      "telcoId" : "0"
+    }
+  ],
+  "idUsuario" : "19",
+  "idNumero" : "1",
+  "data_coding" : "0",
+  "procesado" : 1,
+  "ultimoEstado" : 102,
+  "descripcionEstado" : "Entregado a telco",
+  "nroDePartes" : 1,
+  "messageId" : "0",
+  "conexionSaliente" : "conexionMovistarTx1",
+  "origenOriginal" : "2020"
+}

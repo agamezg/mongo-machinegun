@@ -1,8 +1,5 @@
 package ar.cu.agg.machinegun.repository;
 
-import ar.cu.agg.machinegun.domain.Entity;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoCursor;
 import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +18,7 @@ public class EntityRepository {
 
     }
 
-    public void insertOne() {
-
+    public void insertOne(String collection, Document document) {
+        mongoTemplate.getCollection(collection).insertOne(document);
     }
 }

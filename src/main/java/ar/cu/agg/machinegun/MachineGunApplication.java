@@ -7,14 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MachineGunApplication {
-	private final MachineGun machineGun;
+    private final
+    MachineGun machineGun;
 
-	@Autowired
-	public MachineGunApplication(MachineGun machineGun) {
-		this.machineGun = machineGun;
-	}
+    @Autowired
+    public MachineGunApplication(MachineGun machineGun) {
+        this.machineGun = machineGun;
+    }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		SpringApplication.run(MachineGunApplication.class, args);
 	}
 }
